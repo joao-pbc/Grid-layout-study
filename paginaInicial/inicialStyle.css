@@ -1,0 +1,29 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "header header header header"
+    "content content content sidebar"
+    "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    border-radius: 5px;
+    background: rgb(240, 130, 140);
+}
+
+.content {
+    grid-area: content;
+    border-radius: 5px;
+    background: rgb(130, 240, 139);
+}
+
+footer{
+    grid-area: footer;
+    border-radius: 5px;
+    background: rgb(130, 141, 240);
+}
