@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    font-family: 'Lora';
+}
+
 body{
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 10% 1fr 1fr 1fr 10%;
+    grid-template-columns: 25% 25% 30% 20%;
     grid-template-areas: 
     "header header header header"
     "content content content sidebar"
@@ -15,27 +21,40 @@ body{
 header {
     grid-area: header;
     border-radius: 5px;
-    background: rgb(240, 130, 140);
-
+    background: black;
     display: flex;
-    justify-content: space-evenly;
+    gap: 2%;
     align-items: center;
+}
+
+.header_a{
+    text-decoration: none;
+    color: white;
+    width: 25%;
+    height: auto;
+    text-align: center;
+}
+
+.sidebar {
+    background: rgb(0, 0, 0, 0.3);
+    height: 100%;
 }
 
 .content {
     grid-area: content;
     border-radius: 5px;
-    background: rgb(130, 240, 139);
+    background: rgb(0, 0, 0);
 }
 
 .content_imagem{
     position: relative;
-    width: 100%;
+    width: 130%;
     height: 100%;
+    opacity: 0.3;
 }
 
 footer{
     grid-area: footer;
     border-radius: 5px;
-    background: rgb(130, 141, 240);
+    background: rgb(0, 0, 0);
 }
