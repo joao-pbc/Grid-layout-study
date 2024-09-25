@@ -3,13 +3,14 @@
 * {
     margin: 0;
     font-family: 'Lora';
+    color: white;
 }
 
 body{
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-rows: 10% 1fr 1fr 1fr 10%;
+    grid-template-rows: 10% 1fr 1fr 1fr auto;
     grid-template-columns: 25% 25% 30% 20%;
     grid-template-areas: 
     "header header header header"
@@ -21,16 +22,16 @@ body{
 
 header {
     grid-area: header;
-    border-radius: 5px;
     background: black;
     display: flex;
     gap: 2%;
     align-items: center;
+    text-align: center;
 }
 
 .header_a{
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     width: 25%;
     height: auto;
     text-align: center;
@@ -39,25 +40,26 @@ header {
 .sidebar {
     background: rgb(0, 0, 0, 0.3);
     height: 100%;
+    grid-area: sidebar;
     grid-row-start: 2;
     grid-row-end: 5;
 }
 
 .content {
     grid-area: content;
-    border-radius: 5px;
-    background: rgb(0, 0, 0);
+    background-image: url(Lost-Mines-of-Phandelver.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content_imagem{
     position: relative;
-    width: 130%;
+    width: 100%;
     height: 100%;
     opacity: 0.3;
 }
 
 footer{
     grid-area: footer;
-    border-radius: 5px;
     background: rgb(0, 0, 0);
 }
