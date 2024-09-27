@@ -66,9 +66,10 @@ header {
     display: flex;
     height: 15%;
     width: 100%;
-    border: 0.5px;
-    border-color: white;
-    border-style: solid;
+}
+
+.sidebar_content:hover{
+    animation: mudarCor 0.5s ease forwards;
 }
 
 .sidebar_content_text{
@@ -94,4 +95,13 @@ footer{
 
 p {
     margin: 2% 0 2% 0;
+}
+
+@keyframes mudarCor {
+    from{
+        background: black;
+    } to {
+        background: rgb(255, 255, 255, 0.8);
+        height: 30%;
+    }
 }
