@@ -57,14 +57,14 @@ header {
     margin: 0;
 }
 
-.imagem_sidebar {
-    width: 40%;
+.sidebar_imagem {
+    width: auto;
     height: 100%;
 }
 
 .sidebar_content{
     display: flex;
-    height: auto;
+    height: 15%;
     width: 100%;
     border: 0.5px;
     border-color: white;
@@ -74,6 +74,7 @@ header {
 .sidebar_content_text{
     margin-left: 5%;
     height: fit-content;
+    margin: 6% 10% 0% 12%;
 }
 
 .content {
