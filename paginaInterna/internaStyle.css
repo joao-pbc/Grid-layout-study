@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Lora';
+    color: white;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 1fr 1fr 1fr auto;
+    grid-template-columns: 25% 25% 30% 20%;
+    grid-template-areas: 
+    "header header header header"
+    "content content content sidebar"
+    "content content content sidebar"
+    "content content content sidebar"
+    "footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background: black;
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    text-align: center;
+}
+
+.header_a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 25%;
+    height: auto;
+    text-align: center;
+}
+
+.content_container {
+    border-radius: 10px;
+    background: rgb(0, 0 ,0 ,0.8);
+    width: 90%;
+    height: 90%;
+    padding: 5% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+}
+.product_content{
+    margin-top: 2em;
+    display: flex;
+}
+
+.product_text{
+    margin-left: 1em;
+}
+
+.product_grid{
+    margin-top: 5%;
+    display: grid;
+    grid-template-rows: 15% 1fr 1fr 1fr auto;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+    "desc desc desc desc desc"
+    "item item item item item"
+    "info info info info"
+}
+
+.item{
+    margin-top: 5%;
+    margin-left: 20%;
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.desc{
+    align-content: center;
+}
+
+.desc_text{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
+
+.info_text{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.docIcom{
+    max-width: 50%;
+    height: 50%;
+    margin-top: 25%;
+}
+
+.price{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+
+.cents{
+    font-size: 20px;
+    align-items: start;
+    height: 35px;
+}
+
+.sidebar {
+    font-size: 0.8em;
+    display: flex;
+    background: rgb(0, 0, 0);
+    height: 100%;
+    grid-area: sidebar;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.imagem_sidebar {
+    width: 40%;
+    height: 100%;
+}
+
+.sidebar_content{
+    display: flex;
+    height: auto;
+    width: 100%;
+    border: 0.5px;
+    border-color: white;
+    border-style: solid;
+}
+
+.sidebar_content_text{
+    margin-left: 5%;
+    height: fit-content;
+}
+
+.content {
+    grid-area: content;
+    display: flex;
+    background-image: url(Lost-Mines-of-Phandelver.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    grid-area: footer;
+    background: rgb(0, 0, 0);
+}
+
+p {
+    margin: 2% 0 2% 0;
+}
+.imagem_main{
+    width: 30em;
+    height: 30em;
+}
