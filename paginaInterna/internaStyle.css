@@ -132,14 +132,48 @@ header {
     margin: 0;
 }
 
-.imagem_sidebar {
-    width: 40%;
+.sidebar_imagem {
+    width: auto;
     height: 100%;
 }
 
 .sidebar_content{
     display: flex;
-    height: auto;
+    height: 15%;
+    width: 100%;
+    border: 0.5px;
+    border-color: white;
+    border-style: solid;
+}
+
+.sidebar_content:hover{
+    animation: View 0.5s ease forwards ;
+}
+
+@keyframes View {
+    from{height: 15%;}
+    to{height: 20%;}
+}
+.sidebar {
+    font-size: 0.8em;
+    display: flex;
+    background: rgb(0, 0, 0);
+    height: 100%;
+    grid-area: sidebar;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.sidebar_imagem {
+    width: auto;
+    height: 100%;
+}
+
+.sidebar_content{
+    display: flex;
+    height: 15%;
     width: 100%;
     border: 0.5px;
     border-color: white;
@@ -149,7 +183,17 @@ header {
 .sidebar_content_text{
     margin-left: 5%;
     height: fit-content;
+    margin: 6% 10% 0% 12%;
 }
+
+}
+
+.sidebar_content_text{
+    margin-left: 5%;
+    height: fit-content;
+    margin: 6% 10% 0% 12%;
+}
+
 
 .content {
     grid-area: content;
