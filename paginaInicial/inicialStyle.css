@@ -4,11 +4,13 @@
     margin: 0;
     font-family: 'Lora';
     color: white;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: grid;
     grid-template-rows: 10% 1fr 1fr 1fr auto;
     grid-template-columns: 25% 25% 30% 20%;
@@ -38,10 +40,9 @@ header {
 }
 
 .content_container {
-    border-radius: 10px;
     background: rgb(0, 0 ,0 ,0.8);
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     padding: 5% 5% 5% 5%;
 }
 
@@ -64,8 +65,9 @@ header {
 
 .sidebar_content{
     display: flex;
-    height: 15%;
+    height: 20%;
     width: 100%;
+    flex: 1;
 }
 
 .sidebar_content:hover{
@@ -80,6 +82,7 @@ header {
 
 .content {
     grid-area: content;
+    height: auto;
     display: flex;
     background-image: url(Lost-Mines-of-Phandelver.webp);
     background-repeat: no-repeat;

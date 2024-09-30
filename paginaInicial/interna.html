@@ -58,7 +58,7 @@
             </h1>
             <div class="product_content">
 
-                <img src="imagens/strahd.jpg" alt="" class="imagem_main">
+                <img src="" alt="" class="imagem_main" id="imagem_main">
                 <div>
                     <p class="product_text">
                         Desvende os mistérios de Ravenloft(R) nesta aventura assustadora para o maior RPG do mundo Sob nuvens de tempestade furiosas, o vampiro Conde Strahd von Zarovich está em silhueta contra as antigas muralhas do Castelo Ravenloft. Trovões estrondosos atingem as torres do castelo. O uivo do vento aumenta conforme ele vira seu olhar para baixo em direção à vila de Barovia. Bem abaixo, mas não além de sua visão aguçada, um grupo de aventureiros acaba de entrar em seu domínio. O rosto de Strahd forma o mais leve indício de um sorriso enquanto seu plano sombrio se desenrola. Ele sabia que eles estavam vindo, e ele sabe por que eles vieram - tudo de acordo com seu plano. Um relâmpago rasga a escuridão, mas Strahd se foi. Apenas o uivo do vento preenche o ar da meia-noite. O mestre do Castelo Ravenloft está recebendo convidados para o jantar. E você está convidado. Design e desenvolvimento de aventura por Chris Perkins e Jeremy Crawford.
@@ -133,3 +133,11 @@
     <footer>foter</footer>
 </body>
 </html>
+<script>
+    window.addEventListener("load", (event) => {
+        imagem = localStorage.getItem('imagemzinha');
+        elemento = document.getElementById("imagem_main");
+        elemento.setAttribute('src', imagem);
+        localStorage.clear();
+    });
+</script>

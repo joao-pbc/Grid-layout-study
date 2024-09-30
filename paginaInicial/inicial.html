@@ -9,43 +9,30 @@
 <body>
     <header>
             <a href="" class="header_a">Home</a>
-            <a href="" class="header_a">More</a>
             <img src="" alt="">
         </div>
     </header>
     <section class="sidebar">
-        <div class="sidebar_content">
+        <div class="sidebar_content" onclick="storeInfo(this)">
             <img src="imagens/strahd.jpg" alt="" class="imagem_sidebar">
             <div class="sidebar_content_text">
                 <h3>Curse of stahd</h3>
             </div>
         </div>
-        <div class="sidebar_content">
-            <img src="imagens/download.png" alt="" class="sidebar_imagem">
+        <div class="sidebar_content" onclick="storeInfo(this)">
+            <img src="imagens/download.png" alt="" class="imagem_sidebar">
             <div class="sidebar_content_text">
                 <h3>The shattered Obelisk</h3>
             </div>
         </div>
-        <div class="sidebar_content">
-            <img src="imagens/aba.webp" alt="" class="sidebar_imagem">
+        <div class="sidebar_content" onclick="storeInfo(this)">
+            <img src="imagens/aba.webp" alt="" class="imagem_sidebar">
             <div class="sidebar_content_text">
                 <h3>Lost mines of phandalin</h3>
             </div>
         </div>
-        <div class="sidebar_content">
-            <img src="imagens/ababa.jpg" alt="" class="sidebar_imagem">
-            <div class="sidebar_content_text">
-                <h3>Baldur's Gate</h3>
-            </div>
-        </div>
-        <div class="sidebar_content">
-            <img src="imagens/download (2).png" alt="" class="sidebar_imagem">
-            <div class="sidebar_content_text">
-                <h3>Dragon Lance</h3>
-            </div>
-        </div>
-        <div class="sidebar_content">
-            <img src="imagens/dnd-5e-books-tyranny-of-dragons.jpeg" alt="" class="sidebar_imagem">
+        <div class="sidebar_content" onclick="storeInfo(this)">
+            <img src="imagens/dnd-5e-books-tyranny-of-dragons.jpeg" alt="" class="imagem_sidebar">
             <div class="sidebar_content_text">
                 <h3>Tyranny of dragons</h3>
             </div>
@@ -68,3 +55,11 @@
     <footer>foter</footer>
 </body>
 </html>
+<script>
+    function storeInfo(clickedContent) {
+        contentImage = clickedContent.getElementsByClassName("imagem_sidebar")[0];
+        imagem = contentImage.getAttribute("src");
+        localStorage.setItem('imagemzinha', imagem);
+        window.location.href = "http://127.0.0.1:5500/paginaInicial/interna.html";
+    }
+</script>
