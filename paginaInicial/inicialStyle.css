@@ -89,6 +89,15 @@ header {
     margin: 6% 10% 0% 12%;
 }
 
+button{
+    background: black;
+    width: 20%;
+    height: 10%;
+    margin-top: 20%;
+    margin-left: 40%;
+    border-radius: 5%;
+}
+
 .imagem_main{
     width: 40%;
     height: auto;
